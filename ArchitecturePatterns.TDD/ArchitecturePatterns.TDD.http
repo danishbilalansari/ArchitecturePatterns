@@ -1,0 +1,6 @@
+@ArchitecturePatterns.TDD_HostAddress = http://localhost:5019
+
+GET {{ArchitecturePatterns.TDD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
