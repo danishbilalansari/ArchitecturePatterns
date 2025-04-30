@@ -16,6 +16,41 @@ Each pattern is implemented in a dedicated project with clear use cases and best
 | `ArchitecturePatterns.EDD` | Event-Driven Design    | An Order Placement system publishing events (email, inventory, audit). |
 | `ArchitecturePatterns.TDD` | Test-Driven Development| A simple Calculator with full unit test coverage and a minimal API surface. |
 
+## Project Structure
+
+<pre lang="text"><code>
+ArchitecturePatterns/                
+├── ArchitecturePatterns.sln          
+│
+├── ArchitecturePatterns.DDD/        
+│   ├── Models/
+│   │   ├── Book.cs
+│   │   └── ISBN.cs
+│   ├── Services/
+│   │   └── LibraryService.cs
+│   ├── Program.cs
+│   └── ArchitecturePatterns.DDD.csproj
+│
+├── ArchitecturePatterns.EDD/         
+│   ├── Models/
+│   │   └── Order.cs
+│   ├── Events/
+│   │   ├── OrderPlacedEvent.cs
+│   │   └── EventPublisher.cs
+│   ├── Services/
+│   │   └── OrderService.cs
+│   ├── Program.cs
+│   └── ArchitecturePatterns.EDD.csproj
+│
+├── ArchitecturePatterns.TDD/         
+│   ├── Models/
+│   │   └── Calculator.cs
+│   ├── Program.cs
+│   ├── Tests/
+│   │   └── CalculatorTests.cs                        
+│   └── ArchitecturePatterns.TDD.csproj
+</code></pre>
+
 ## Getting Started
 
 ### Prerequisites
