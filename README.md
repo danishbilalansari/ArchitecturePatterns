@@ -76,21 +76,36 @@ This project demonstrates three distinct software design paradigms implemented i
 ArchitecturePatterns/                
 ├── ArchitecturePatterns.sln          
 │
-├── ArchitecturePatterns.DDD/        
-│   ├── Models/
-│   │   ├── Book.cs
-│   │   └── ISBN.cs
-│   ├── Services/
+├── ArchitecturePatterns.DDD/ 
+│   ├── Api/Controllers
+│   │   └── LibraryController.cs/
+│   ├── Application/Services/
 │   │   └── LibraryService.cs
+│   ├── Domain/
+│   │   ├── Entities/
+│   │   │   ├── Book.cs
+│   │   │   └── Member.cs
+│   │   ├── Repositories/
+│   │   │   └── IBookRepository.cs
+│   │   ├── ValueObjects/
+│   │   │   └── ISBN.cs
+│   ├── Infrastructure/Repositories/
+│   │   └── InMemoryBookRepository.cs
 │   ├── Program.cs
 │   └── ArchitecturePatterns.DDD.csproj
 │
 ├── ArchitecturePatterns.EDD/         
-│   ├── Models/
-│   │   └── Order.cs
+│   ├── Api/Controllers
+│   │   └── OrderController.cs/
 │   ├── Events/
-│   │   ├── OrderPlacedEvent.cs
-│   │   └── EventPublisher.cs
+│   │   ├── IEvent.cs
+│   │   └── OrderPlacedEvent.cs
+│   ├── Handlers/
+│   │   ├── IEventHandler.cs
+│   │   ├── SendEmailHandler.cs
+│   │   └── UpdateInventoryHandler.cs
+│   ├── Infrastructure/
+│   │   └── InMemoryEventBus.cs
 │   ├── Services/
 │   │   └── OrderService.cs
 │   ├── Program.cs
