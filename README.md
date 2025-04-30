@@ -1,10 +1,10 @@
-# ArchitecturePatterns (.NET 9)
+# Architecture Patterns (.NET 9)
 
 A multi-project solution demonstrating three key architectural and development patterns in .NET:
 
-- 🧠 **DDD** — Domain-Driven Design  
-- ⚡ **EDD** — Event-Driven Design  
-- ✅ **TDD** — Test-Driven Development  
+- **DDD** — Domain-Driven Design  
+- **EDD** — Event-Driven Design  
+- **TDD** — Test-Driven Development  
 
 Each pattern is implemented in a dedicated project with clear use cases and best practices.
 
@@ -20,9 +20,9 @@ Each pattern is implemented in a dedicated project with clear use cases and best
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) (Preview)
 - (Optional) [Visual Studio 2022+](https://visualstudio.microsoft.com/)
 - (Optional) [Postman](https://www.postman.com/) for API testing
@@ -31,7 +31,7 @@ Each pattern is implemented in a dedicated project with clear use cases and best
 
 ---
 
-## 📦 Setup
+## Setup
 
 ```bash
 # Clone the repo
@@ -45,6 +45,6 @@ dotnet restore
 dotnet build
 
 # Run each project
-dotnet run --project ArchitecturePatternsDemo.DDD
-dotnet run --project ArchitecturePatternsDemo.EDD
-dotnet run --project ArchitecturePatternsDemo.TDD
+dotnet run --project ArchitecturePatterns.DDD
+dotnet run --project ArchitecturePatterns.EDD
+dotnet run --project ArchitecturePatterns.TDD
