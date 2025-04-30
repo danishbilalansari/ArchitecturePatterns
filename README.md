@@ -8,17 +8,13 @@ A multi-project solution demonstrating three key architectural and development p
 
 Each pattern is implemented in a dedicated project with clear use cases and best practices.
 
----
-
-## 📁 Projects in This Solution
+## Projects in This Solution
 
 | Project                    | Pattern                | Description |
 |----------------------------|------------------------|-------------|
 | `ArchitecturePatterns.DDD` | Domain-Driven Design   | A Book Library system with rich domain models (e.g., `Book`, `ISBN`) and domain services. |
 | `ArchitecturePatterns.EDD` | Event-Driven Design    | An Order Placement system publishing events (email, inventory, audit). |
 | `ArchitecturePatterns.TDD` | Test-Driven Development| A simple Calculator with full unit test coverage and a minimal API surface. |
-
----
 
 ## Getting Started
 
@@ -27,9 +23,7 @@ Each pattern is implemented in a dedicated project with clear use cases and best
 - (Optional) [Visual Studio 2022+](https://visualstudio.microsoft.com/)
 - (Optional) [Postman](https://www.postman.com/) for API testing
 
-> ⚠️ Swagger UI (via Swashbuckle) may not yet work in .NET 9 preview. Downgrade to `.NET 8` temporarily if needed.
-
----
+> **Note:** Swagger UI (via Swashbuckle) may not yet work in .NET 9 preview. Downgrade to `.NET 8` temporarily if needed.
 
 ## Setup
 
