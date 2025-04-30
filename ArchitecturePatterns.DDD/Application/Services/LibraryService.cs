@@ -22,4 +22,9 @@ public class LibraryService
     {
         return _repository.GetAll().Where(b => !b.IsBorrowed);
     }
+
+    public void AddBook(Book book)
+    {
+        _repository.Add(book);
+    }
 }
