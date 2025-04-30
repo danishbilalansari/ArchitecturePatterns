@@ -116,7 +116,7 @@ ArchitecturePatterns/
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/ArchitecturePatterns.git
+git clone https://github.com/danishbilalansari/ArchitecturePatterns.git
 cd ArchitecturePatterns
 
 # Restore dependencies
