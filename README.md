@@ -83,6 +83,8 @@ ArchitecturePatterns/
 │   │   └── LibraryService.cs
 │   ├── Domain/
 │   │   ├── Entities/
+│   │   │   ├── DTO/
+│   │   │   │   ├── BookDTO.cs
 │   │   │   ├── Book.cs
 │   │   │   └── Member.cs
 │   │   ├── Repositories/
