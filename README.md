@@ -53,6 +53,8 @@ This project demonstrates three distinct software design paradigms implemented i
 
 ## Side-by-Side Comparison
 
+![image alt](https://github.com/danishbilalansari/ArchitecturePatterns/blob/8118b34f0feb65bdf279018fc480b24ee24bc864/ArchitecturalPatterns.png)
+
 | Principle | DDD                           | EDD                             | TDD                            |
 |----------|-------------------------------|----------------------------------|--------------------------------|
 | Focus    | Business domain modeling      | Decoupled, event-based flow     | Code correctness via testing  |
