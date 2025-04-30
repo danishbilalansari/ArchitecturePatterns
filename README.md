@@ -1,14 +1,66 @@
 # Architecture Patterns (.NET 9)
 
-A multi-project solution demonstrating three key architectural and development patterns in .NET:
+This project demonstrates three distinct software design paradigms implemented in .NET 9 using Minimal APIs:
 
-- **DDD** — Domain-Driven Design  
-- **EDD** — Event-Driven Design  
-- **TDD** — Test-Driven Development  
+### Domain-Driven Design (DDD)
 
-Each pattern is implemented in a dedicated project with clear use cases and best practices.
+> Focus: **Modeling complex business domains**
 
-## Projects in This Solution
+**DDD** emphasizes creating software that reflects real-world business logic through a rich domain model. It promotes a close alignment between domain experts and developers.
+
+**Key Concepts:**
+- Entities, Value Objects, and Aggregates
+- Domain Services encapsulate business logic
+- Ubiquitous Language shared between tech and business
+- Repositories abstract persistence
+- Bounded Contexts to isolate domain concerns
+
+**When to Use:**
+- Complex business domains (e.g., banking, logistics)
+- Need for deep domain modeling and collaboration
+
+
+### Event-Driven Design (EDD)
+
+> Focus: **Decoupled, reactive systems via events**
+
+**EDD** structures your application around events that represent meaningful business actions. It's well-suited for distributed systems and services that need to react asynchronously.
+
+**Key Concepts:**
+- Events represent state changes (e.g., `OrderPlaced`)
+- Event Publishers and Subscribers
+- Loose coupling between components
+- Ideal for microservices, CQRS, and message queues
+
+**When to Use:**
+- Real-time updates or workflows
+- Systems with asynchronous processing or integrations
+
+### Test-Driven Development (TDD)
+
+> Focus: **Quality-first development via tests**
+
+**TDD** is a programming methodology where tests are written before the code that satisfies them. It helps ensure correctness, drive design, and improve maintainability.
+
+**Key Concepts:**
+- Red → Green → Refactor cycle
+- Write a failing test, then write code to pass it
+- Encourages small, focused functions and better design
+
+**When to Use:**
+- Applications where stability and refactoring are frequent
+- Codebases that benefit from high test coverage
+
+## Side-by-Side Comparison
+
+| Principle | DDD                           | EDD                             | TDD                            |
+|----------|-------------------------------|----------------------------------|--------------------------------|
+| Focus    | Business domain modeling      | Decoupled, event-based flow     | Code correctness via testing  |
+| Key Unit | Entity / Aggregate Root       | Event / Message                 | Test case                     |
+| Benefits | Business alignment, clarity   | Scalability, async processing   | High code confidence          |
+| Use Case | Business-heavy applications   | Realtime/messaging systems      | Any app needing reliability   |
+
+## Projects in This Solution (Demo)
 
 | Project                    | Pattern                | Description |
 |----------------------------|------------------------|-------------|
