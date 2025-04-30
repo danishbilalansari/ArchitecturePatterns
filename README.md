@@ -128,6 +128,7 @@ ArchitecturePatterns/
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) (Preview)
 - (Optional) [Visual Studio 2022+](https://visualstudio.microsoft.com/)
 - (Optional) [Postman](https://www.postman.com/) for API testing
+- xunit.runner.visualstudio package for testing the test cases in ArchitecturePatterns.TDD
 
 > **Note:** Swagger UI (via Swashbuckle) may not yet work in .NET 9 preview. Downgrade to `.NET 8` temporarily if needed.
 
